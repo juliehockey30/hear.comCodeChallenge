@@ -1,69 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Simnulated Reddit Post Dashboard
+####This project was created as part of a coding challenge. It represents a simulated Reddit dashboard.
+####When running, the app allows users to view the post as well as view and delete comments
+
+
+Note - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+To start the app locally, simply clone this repo and run the following command:
 
-### `yarn start`
+### `yarn start` or `npm start`
 
-Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+####Note - you may need to first run `yarn` or `npm install` to ensure all the necessary dependencies are installed.
 
-### `yarn test`
+##Notes/Known Bugs from Julie
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+####Points
+From the data response we get from the backend, I chose to only display the "ups" for points. I wondered if this was an accurate representation of the data or if I should subtract or add the "downs" as well.
 
-### `yarn build`
+####Dates on Comments
+The mock shows all of the timestamp differences in hours, however, aI chose to represent them in months
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+####Threaded Comments UI/UX
+I choose to add bottom border to the comments even though it wasn't in the mock. I thought this may help a user visually see which comments are linked to each other
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+##Future Proposed Work
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+####Loading State
+Currently, when the data is being retrieved from the backend, there is simply some text that says "Loading data". I would like to improve/prettify this display.
 
-### `yarn eject`
+####Indication Of Deleted Comments
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# hear.comCodeChallenge
+In the future, I'd like to let the user know when one of the "threaded" comments is in response to a comment that has since been deleted.
