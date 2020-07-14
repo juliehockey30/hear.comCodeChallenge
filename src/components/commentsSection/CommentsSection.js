@@ -97,6 +97,7 @@ class CommentsSection extends Component {
   deleteComment(idToBeDeleted) {
     let currentComments = this.state.comments;
 
+    //find the comment to be deleted based on id and remove it from array
     for (var i = 0; i < currentComments.length; ++i) {
       if (currentComments[i].id === idToBeDeleted) {
           currentComments.splice(i, 1);

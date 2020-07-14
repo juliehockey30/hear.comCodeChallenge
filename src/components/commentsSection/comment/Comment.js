@@ -17,7 +17,7 @@ class Comment extends Component {
     return this.props.comment.split(/(?=Edit)/)
   }
 
-  //Used to render edits for comments on their own lines
+  //Render edits for comments on their own line(s)
   renderCommentWithEdits() {
     let commentArr = this.divideCommentEdits();
     return(
