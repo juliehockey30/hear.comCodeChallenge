@@ -1,6 +1,7 @@
-#Simnulated Reddit Post Dashboard
-####This project was created as part of a coding challenge. It represents a simulated Reddit dashboard.
-####When running, the app allows users to view the post as well as view and delete comments
+# Simulated Reddit Post Dashboard
+
+#### This project was created as part of a coding challenge. It represents a simulated Reddit dashboard.
+#### When running, the app allows users to view the post as well as view and delete comments
 
 
 Note - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
